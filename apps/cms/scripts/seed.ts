@@ -46,10 +46,6 @@ function setupSeed() {
     console.log('🚀 You can now run: npm run develop');
     console.log('   The seed will run automatically when Strapi starts!\n');
   }
-
-  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  console.log('📖 For more details, see: apps/cms/SEED_INSTRUCTIONS.md');
-  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 }
 
 setupSeed();
