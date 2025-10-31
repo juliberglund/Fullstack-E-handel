@@ -149,7 +149,7 @@ export async function seed(strapi: Core.Strapi) {
       }
     );
 
-    if (existingProducts && existingProducts.length > 0) {
+    if (existingProducts.length > 0) {
       console.log('✅ Products already exist. Skipping seed.');
       return;
     }
