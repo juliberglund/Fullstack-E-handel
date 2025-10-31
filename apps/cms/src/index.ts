@@ -1,4 +1,5 @@
-// import type { Core } from '@strapi/strapi';
+import type { Core } from '@strapi/strapi';
+import { seed } from '../database/seed';
 
 export default {
   /**
@@ -16,5 +17,10 @@ export default {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  bootstrap(/* { strapi }: { strapi: Core.Strapi } */) {},
+  async bootstrap({ strapi }: { strapi: Core.Strapi }) {
+    // Optionally seed database on startup (set SEED_ON_STARTUP=true in .env)
+    if (process.env.SEED_ON_STARTUP === 'true') {
+      await seed(strapi);
+    }
+  },
 };
