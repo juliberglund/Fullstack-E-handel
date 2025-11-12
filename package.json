@@ -23,5 +23,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@paypal/react-paypal-js": "github:paypal/react-paypal-js",
+    "zustand": "^5.0.8"
+  }
 }
